@@ -18,7 +18,7 @@ function authMiddleware(req, res, next) {
   }
 
   res.set('WWW-Authenticate', 'Basic realm="user_pages"');
-  res.status(401).sendFile(`${__dirname}/public/unauthorized.html`);
+  res.status(401).sendFile(`${__dirname}/unauthorized.html`);
 }
 
 module.exports = authMiddleware;

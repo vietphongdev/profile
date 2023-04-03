@@ -12,10 +12,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Endpoints
 app.get('/', (req, res) => {
-	res.sendFile(`${__dirname}/public/index.html`);
+	res.sendFile(`${__dirname}/index.html`);
 });
 app.get('/cv', (req, res) => {
-	res.sendFile(`${__dirname}/public/cv.html`);
+	res.sendFile(`${__dirname}/cv.html`);
 });
 
 app.listen(8080, () => console.log("Server is running on PORT 8080"));
