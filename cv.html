@@ -14,27 +14,24 @@
       content="Viet Phong - full-stack freelance software engineer"
     />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://phongkv.github.io/profile" />
+    <meta property="og:url" content="https://vietphong.dev" />
     <meta property="og:description" content="My CV." />
     <meta
       property="og:image"
-      content="https://phongkv.github.io/profile/avatar.png"
+      content="https://vietphong.dev/profile/avatar.png"
     />
-    <meta property="fb:profile_id" content="phongkv" />
-    <meta property="fb:admins" content="phongkv" />
+    <meta property="fb:profile_id" content="vietphong" />
+    <meta property="fb:admins" content="vietphong" />
 
     <!-- Favicons -->
     <link href="./img/favicon.cv.png" rel="icon" />
 
     <!-- Vendor CSS Files -->
-    <link
-      href="./vendor/boxicons/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
     <link href="./style/cv.css" rel="stylesheet" />
-
   </head>
 
   <body class="cv">
@@ -69,7 +66,7 @@
               </div>
               <div class="cv-header-meta-row">
                 <a href="https://codepen.io/vietphongdev95" target="_blank">
-                  <i class='bx bxl-codepen' style="font-size: large"></i>
+                  <i class="bx bxl-codepen" style="font-size: large"></i>
                   codepen.io/vietphongdev
                 </a>
               </div>
@@ -100,13 +97,14 @@
               </div>
               <div class="cv-header-meta-row">
                 <a href="https://medium.com/@viet.phong.dev" target="_blank">
-                  <i class='bx bxl-medium' style="font-size: large"></i>
+                  <i class="bx bxl-medium" style="font-size: large"></i>
                   medium.com/vietphongdev
                 </a>
               </div>
             </div>
           </div>
         </div>
+        <hr class="sep-3" />
         <!-- Skills -->
         <div class="cv-section">
           <h3 class="cv-section-title">
@@ -114,42 +112,82 @@
           </h3>
           <div class="cv-section-content cv-section-content--indented">
             <ul style="margin-top: 0">
-              <li>
-                Front-end: JavaScript, TypeScript, React (with Hooks), Jquery,
-                Redux, Formik, AntDesign, TailwindCss
+              <li class="mb-2">
+                <strong>Front-end:</strong> JavaScript, TypeScript, React (with
+                Hooks), Redux, NextJS, Jquery, MaterialUI, AntDesign,
+                TailwindCss, Bootstrap.
               </li>
-              <li>
-                Back-end: Node.js, Express, Firebase, No-SQL databases
-                (MongoDB), in-memory databases (Redis)
+              <li class="mb-2">
+                <strong>Back-end: </strong>Typescript, NodeJS, ExpressJS,
+                GraphQL, Nginx, Docker.
               </li>
-              <li>
-                UI/UX:
+              <li class="mb-2">
+                <strong>Database:</strong>
+                <ul>
+                  <li>SQL: MySQL, PostgresSQL.</li>
+                  <li>NoSQL: MongoDB, Firebase.</li>
+                  <li>In-memory: Redis.</li>
+                </ul>
+              </li>
+              <li class="mb-2">
+                <strong>UI/UX:</strong>
                 <ul>
                   <li>
                     Wireframe: A web page layout stripped of visual design used
-                    to prioritize page elements based on user needs
+                    to prioritize page elements based on user needs.
                   </li>
                   <li>
                     Prototype: A sample or simulation of a final product used to
                     test and gather feedback. High-fidelity prototypes are
                     typically computer-based and allow for mouse and keyboard
-                    interaction
+                    interaction.
                   </li>
                   <li>
                     Mockup: A realistic visual model of what a final webpage or
-                    application will look like
+                    application will look like.
                   </li>
                   <li>
                     User flow: A diagram that maps out each step a user takes
-                    when using a product or service
+                    when using a product or service.
                   </li>
                 </ul>
               </li>
-              <br />
+              <li class="mb-2">
+                <strong>Tools:</strong> Work with a number of tools to help
+                developers in the product design process:
+                <ul>
+                  <li>
+                    VsCode: a free-editor that helps the programmer write code,
+                    helps in debugging and corrects the code.
+                  </li>
+                  <li>
+                    Npm: a CLI (command-line interface) tool for publishing and
+                    downloading packages, an online repository that hosts
+                    JavaScript packages.
+                  </li>
+                  <li>
+                    Postman: Postman is an API platform for building and using
+                    APIs. Postman simplifies each step of the API lifecycle and
+                    streamlines collaboration so you can create better
+                    APIs—faster.
+                  </li>
+                  <li>
+                    Git: Code versioning or version control enables you to track
+                    and control, but also revise any changes to your programming
+                    code.
+                  </li>
+                  <li>
+                    Jira: Software application allows teams to track issues,
+                    manage projects, and automate workflows.
+                  </li>
+                  <li>etc...</li>
+                </ul>
+              </li>
               <li>
-                Problem Solving: As a web developer, it's important to know how
-                to continuously test your webpage for any possible errors.
-                Should any arise, you should also know how to debug it.
+                <strong>Problem Solving: </strong> As a web developer, it's
+                important to know how to continuously test your webpage for any
+                possible errors. Should any arise, you should also know how to
+                debug it.
                 <ul>
                   <li>
                     Testing: Functional testing looks at a particular piece of
@@ -164,34 +202,6 @@
                   </li>
                 </ul>
               </li>
-              <br />
-              <li>
-                Tools: Work with a number of tools to help developers in the
-                product design process:
-                <ul>
-                  <li>
-                    VsCode: a free-editor that helps the programmer write code,
-                    helps in debugging and corrects the code
-                  </li>
-                  <li>
-                    Npm: a CLI (command-line interface) tool for publishing and
-                    downloading packages, an online repository that hosts
-                    JavaScript packages
-                  </li>
-                  <li>
-                    Postman: Postman is an API platform for building and using
-                    APIs. Postman simplifies each step of the API lifecycle and
-                    streamlines collaboration so you can create better
-                    APIs—faster.
-                  </li>
-                  <li>
-                    GIT: Code versioning or version control enables you to track
-                    and control, but also revise any changes to your programming
-                    code.
-                  </li>
-                  <li>etc ...</li>
-                </ul>
-              </li>
             </ul>
           </div>
         </div>
@@ -203,6 +213,47 @@
           </h3>
           <div class="cv-section-content">
             <div class="cv-timeline">
+              <div class="cv-timeline-row p-experience h-event">
+                <div class="cv-timeline-side">
+                  <div class="cv-timeline-company">FPT software</div>
+                  <div class="cv-timeline-date">Mar 2022 - Feb 2023</div>
+                  <a
+                    href="https://www.fpt-software.com"
+                    target="_blank"
+                    class="cv-timeline-website"
+                    ><i class="bx bx-link"></i> fptsoftware.com</a
+                  >
+                </div>
+                <div class="cv-timeline-body p-summary">
+                  <h4 class="cv-timeline-position p-name">
+                    Frontend Web Developer
+                  </h4>
+                  <p>
+                    Work with an app development team, including a project
+                    manager, software engineer, program manager and quality
+                    assurance researcher.
+                  </p>
+                  <ul>
+                    <li>
+                      Developed various app solutions using different coding
+                      languages and built frameworks, like HTML, SQL and
+                      JavaScript.
+                    </li>
+                    <li>
+                      Fix and maintain bugs for improved web functionality and
+                      efficiency.
+                    </li>
+                    <li>
+                      Technologies: Typescript, ReactJS, MaterialUI,
+                      GraphQL-client, NodeJS.
+                    </li>
+                    <li>
+                      Leveled-up my Javascript skills, diving deep into NestJS,
+                      Typeorm, Docker, and PostgreSQL.
+                    </li>
+                  </ul>
+                </div>
+              </div>
               <div class="cv-timeline-row p-experience h-event">
                 <div class="cv-timeline-side">
                   <div class="cv-timeline-company">VMO Group</div>
@@ -237,7 +288,14 @@
                     </li>
                     <li>
                       Developed REST API with JWT token authentication to be
-                      used by third parties.
+                      used by third parties and designing and implementing
+                      low-latency, high-availability, and performant
+                      applications.
+                    </li>
+                    <li>
+                      Collaborating with Product Designers, Product Managers,
+                      and Software Engineers to deliver performant server side
+                      applications.
                     </li>
                     <li>
                       Designed and configured role-based access control system.
@@ -245,11 +303,10 @@
                   </ul>
                 </div>
               </div>
-
               <div class="cv-timeline-row p-experience h-event">
                 <div class="cv-timeline-side">
                   <div class="cv-timeline-company">Fabbi JSC</div>
-                  <div class="cv-timeline-date">July 2018 - Oct 2020</div>
+                  <div class="cv-timeline-date">July 2017 - Oct 2020</div>
                   <a
                     href="https://fabbi.com.vn/"
                     target="_blank"
@@ -259,7 +316,7 @@
                 </div>
                 <div class="cv-timeline-body p-summary">
                   <h4 class="cv-timeline-position p-name">
-                    Front-End Web Developer
+                    Frontend Web Developer
                   </h4>
                   <p>
                     Developed/programmed new functionality and features in line
@@ -285,6 +342,12 @@
                       >
                     </li>
                     <li>
+                      Created multiple web applications, participating in the
+                      whole process of their development: product design and
+                      estimation, code design and development, UI/UX design,
+                      product launch and maintenance.
+                    </li>
+                    <li>
                       Used AJAX and JSON to make asynchronous calls to the
                       project server to fetch data on the fly.
                     </li>
@@ -301,11 +364,21 @@
                   </ul>
                 </div>
               </div>
-
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- Internship -->
+        <div class="cv-section">
+          <h3 class="cv-section-title">
+            <i class="fa fa-terminal"></i> Internship
+          </h3>
+          <div class="cv-section-content">
+            <div class="cv-timeline">
               <div class="cv-timeline-row p-experience h-event">
                 <div class="cv-timeline-side">
                   <div class="cv-timeline-company">BaoPhat Co.,Ltd</div>
-                  <div class="cv-timeline-date">Apr 2017 - June 2018</div>
+                  <div class="cv-timeline-date">May 2016 - Mar 2017</div>
                   <a
                     href="https://baophat.net/"
                     target="_blank"
@@ -315,19 +388,13 @@
                 </div>
                 <div class="cv-timeline-body p-summary">
                   <h4 class="cv-timeline-position p-name">
-                    Front-End Web Developer
+                    Frontend Web Internship
                   </h4>
                   <p>
                     Working on automation platforms helps sellers manage their
                     products and cash flow in the best way.
                   </p>
                   <ul>
-                    <li>
-                      Created multiple web applications, participating in the
-                      whole process of their development: product design and
-                      estimation, code design and development, UI/UX design,
-                      product launch and maintenance.
-                    </li>
                     <li>
                       A front-end web developer is responsible for implementing
                       visual elements that users see and interact with in a web
@@ -338,44 +405,18 @@
                       Use markup languages like HTML to create user-friendly web
                       pages.
                     </li>
-                    <li>Developing features to enhance the user experience.</li>
                     <li>
                       Ensuring web design is optimized for smartphones.It
                       appears correctly on devices of all sizes no part of the
                       website should behave abnormally irrespective of the size
                       of the screen.
                     </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="cv-timeline-row p-experience h-event">
-                <div class="cv-timeline-side">
-                  <div class="cv-timeline-company">BaoPhat Co.,Ltd</div>
-                  <div class="cv-timeline-date">Oct 2016 - Mar 2017</div>
-                  <a
-                    href="https://baophat.net/"
-                    target="_blank"
-                    class="cv-timeline-website"
-                    ><i class="bx bx-link"></i> baophat.net</a
-                  >
-                </div>
-                <div class="cv-timeline-body p-summary">
-                  <h4 class="cv-timeline-position p-name text-uppercase">
-                    Front-End Web Internship
-                  </h4>
-                  <ul>
-                    <li>Convert PSD file to HTML base on design.</li>
-                    <li>
-                      Develop front-end web application using HTML/CSS and
-                      JavaScript. Specification/wireframes will be provided.
-                    </li>
                     <li>
                       Development with cross-browser/cross-device compatibility
-                      in a graded browser support environment.
+                      in a graded browser support environment.Assist team with
+                      testing code in multiple browsers.
                     </li>
-                    <li>Redesign and develop an existing web sites.</li>
-                    <li>Assist team with testing code in multiple browsers.</li>
+                    <li>Developing features to enhance the user experience.</li>
                   </ul>
                 </div>
               </div>
@@ -428,6 +469,10 @@
                         >freecodecamp.org</a
                       >
                       ,
+                      <a href="https://www.w3schools.com/" target="_blank"
+                        >w3schools.com</a
+                      >
+                      ,
                       <a
                         href="https://www.smashingmagazine.com/"
                         target="_blank"
@@ -466,6 +511,10 @@
                 Ability to work in team, approach and solve problems quickly in
                 the work and a good listener to peoples.
               </li>
+              <li>
+                Maintaining updated knowledge of new and emerging industry
+                trends and technology.
+              </li>
             </ul>
           </div>
         </div>
@@ -476,7 +525,7 @@
         <div class="pdf-options">
           <div class="pdf-option d-flex align-items-center">
             <a
-              href="../khuong_viet_phong_cv.pdf"
+              href="./viet_phong_cv.pdf"
               alt="Viet Phong"
               target="_blank"
               rel="noopener noreferrer"
@@ -493,8 +542,8 @@
       </div>
     </div>
 
-    <script src="..\assets\vendor\jquery\jquery.min.js"></script>
-    <script src="..\assets\vendor\html2pdf\html2pdf.bundle.min.js"></script>
-    <script src="..\assets\js\downloadPDF.js"></script>
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/html2pdf/html2pdf.bundle.min.js"></script>
+    <script src="./js/downloadPDF.js"></script>
   </body>
 </html>

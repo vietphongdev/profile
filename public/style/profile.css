@@ -396,44 +396,40 @@ section {
 /*--------------------------------------------------------------
   # Skills
   --------------------------------------------------------------*/
-.skills .progress {
-  height: 50px;
-  display: block;
-  background: none;
-}
 
-.skills .progress .skill {
+.skills #skill-filters {
   padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
+  margin: 0 auto 35px auto;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.skills #skill-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px 8px 15px;
+  font-size: 14px;
   font-weight: 600;
-  color: #050d18;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #272829;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
+.skills #skill-filters li:hover,
+.skills #skill-filters li.filter-active {
+  color: #149ddd;
 }
 
-.skills .progress-bar-wrap {
-  background: #dce8f8;
+.skills #skill-filters li:last-child {
+  margin-right: 0;
 }
 
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
-}
-
-.skills .tools {
-  background-color: white;
-  border-radius: 5px;
-}
-
-.skills .tool {
-  background-color: white;
+.skills .skill-item {
   padding: 10px;
   border-radius: 15px;
   -webkit-transition: all 0.3s ease-in;
@@ -441,25 +437,163 @@ section {
   -webkit-box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);
   box-shadow: 0px 4px 8px rgb(134 151 168 / 10%);
   border: 1px solid #eee;
+  font-size: 13px;
 }
 
-.skills .tool:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0 10px 28px rgb(0 0 0 / 20%);
-  box-shadow: 0 10px 28px rgb(0 0 0 / 20%);
-}
-
-.skills img {
-  width: 35px;
+.skills .skill-item img {
+  width: 45px;
   height: 35px;
   vertical-align: middle;
   border: 0;
 }
 
-.skills .tool div {
-  margin-top: 10px;
-  font-size: 13px;
+.marquee {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em;
+  background-color: #f8f9fa;
+  font-weight: 200;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  overflow: hidden;
 }
+.marquee-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-animation: marquee 30s linear infinite running;
+  -moz-animation: marquee 30s linear infinite running;
+  -o-animation: marquee 30s linear infinite running;
+  -ms-animation: marquee 30s linear infinite running;
+  animation: marquee 30s linear infinite running;
+}
+.marquee-content:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  -ms-animation-play-state: paused;
+  animation-play-state: paused;
+}
+.marquee-tag {
+  width: 160px;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  background: rgba(255, 255, 255, 0.1);
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.marquee-tag:hover {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.marquee img {
+  width: 3rem;
+}
+@-moz-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+@-o-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -o-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+  }
+}
+
 /*--------------------------------------------------------------
   # Resume
   --------------------------------------------------------------*/
@@ -532,21 +666,18 @@ section {
 /*--------------------------------------------------------------
   # Portfolio
   --------------------------------------------------------------*/
-.portfolio .portfolio-item {
-  margin-bottom: 30px;
-}
 
-.portfolio #portfolio-flters {
+.portfolio #portfolio-filters {
   padding: 0;
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: #e9ecef;
   border-radius: 50px;
   padding: 2px 15px;
 }
 
-.portfolio #portfolio-flters li {
+.portfolio #portfolio-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px 8px 15px;
@@ -559,12 +690,12 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-filters li:hover,
+.portfolio #portfolio-filters li.filter-active {
   color: #149ddd;
 }
 
-.portfolio #portfolio-flters li:last-child {
+.portfolio #portfolio-filters li:last-child {
   margin-right: 0;
 }
 
@@ -1112,16 +1243,11 @@ label::after {
   background: #040b14;
 }
 
-#footer .copyright {
-  text-align: center;
-  font-size: 13px;
-}
-
 #footer .credits {
-  padding-top: 5px;
   text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
+  font-size: 12px;
+  color: #939393;
+  padding-bottom: 7px;
 }
 
 @media (max-width: 1199px) {

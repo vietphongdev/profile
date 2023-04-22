@@ -2181,6 +2181,24 @@ hr {
   background: #ddd;
   border: none;
 }
+hr.sep-3 {
+  border: none;
+  height: 1px;
+  background-image: linear-gradient(to right, #f3efef, #c17878, #f0f0f0);
+}
+hr.sep-3::after {
+  content: "§";
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(60deg);
+  transform-origin: 50% 50%;
+  padding: 1rem;
+  background-color: white;
+  color: #bb1e1e;
+  font-weight: 900;
+}
+
 .dl-vertical dt {
   display: block;
   clear: both;
