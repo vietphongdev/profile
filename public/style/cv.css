@@ -3248,7 +3248,7 @@ body.cv {
   display: block;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 1;
   margin-bottom: 5px;
   color: #bb1e1e;
@@ -3256,7 +3256,7 @@ body.cv {
 .cv-header-subname {
   display: block;
   text-transform: none;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   margin-bottom: 5px;
   color: #777;

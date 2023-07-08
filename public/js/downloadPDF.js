@@ -3,7 +3,7 @@ window.onload = function () {
     const content = this.document.getElementById("content");
     var config = {
       margin: 0.5,
-      filename: "viet_phong_cv.pdf",
+      filename: "vietphongdev.pdf",
       image: { type: "jpeg", quality: 0.98 },
       pagebreak: { avoid: ["tr", "pre", "li"] },
       html2canvas: { scale: 2, dpi: 192, letterRendering: true },
