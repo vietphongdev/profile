@@ -5,7 +5,7 @@ const authMiddleware = require("./auth");
 
 const app = express();
 
-// app.use(authMiddleware);
+app.use(authMiddleware);
 
 app.use(express.static(path.join(__dirname, "public")));
 
