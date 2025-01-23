@@ -2,8 +2,15 @@ const express = require("express");
 const path = require("path");
 require("dotenv").config();
 const authMiddleware = require("./auth");
+const prerender = require("prerender-node");
 
 const app = express();
+
+app.use(
+  prerender
+    .set("prerenderToken", process.env.PRERENDER_TOKEN)
+    .whitelisted(["/"])
+);
 
 app.use(authMiddleware);
 
